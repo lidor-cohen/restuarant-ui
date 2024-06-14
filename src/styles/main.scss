@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&display=swap");
+
+$background-color: #0a0b0a;
+$background-secondary-color: #111111;
+$text-color: #efe6d2;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  color: $text-color;
+  font-family: "Forum", sans-serif;
+  font-weight: lighter;
+}
+
+body {
+  padding: 25px;
+  background-color: $background-color;
+  height: 100vh;
+}
