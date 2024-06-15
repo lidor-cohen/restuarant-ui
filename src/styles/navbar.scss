@@ -1,0 +1,41 @@
+@import "main.scss";
+
+
+.nav-wrapper {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+
+    padding: 50px;
+}
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: $default-gap;
+    
+    background-color: $background-color;
+    border-radius: 10px;
+}
+
+.navbar p{
+    font-weight: 100;
+    font-size: 27px;
+}
+
+.menu-button {
+    background-color: $background-secondary-color;
+    box-shadow: 0 0 2px $text-color;
+    border-radius: 6px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg {
+    color: black;
+    width: 25px;
+    height: auto;
+}
