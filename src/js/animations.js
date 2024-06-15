@@ -1,5 +1,6 @@
 let cardElements = document.querySelectorAll(".brightness-animate-element");
 let regularButtons = document.querySelectorAll(".nav-regular-button");
+let cardActionSections = document.querySelectorAll(".card-action-section");
 
 // BRIGHTNESS ANIMATION
 function startBrightnessAnimation() {
@@ -13,6 +14,16 @@ function stopBrightnessAnimation() {
 cardElements.forEach((element) => {
   element.addEventListener("mouseover", startBrightnessAnimation);
   element.addEventListener("mouseout", stopBrightnessAnimation);
+});
+cardActionSections.forEach((element) => {
+  element.addEventListener(
+    "mouseover",
+    startBrightnessAnimation.bind(element.parentElement.children[0])
+  );
+  element.addEventListener(
+    "mouseout",
+    stopBrightnessAnimation.bind(element.parentElement.children[0])
+  );
 });
 
 // BUTTON HOVER ANIMATION
