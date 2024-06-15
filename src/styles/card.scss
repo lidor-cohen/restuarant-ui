@@ -78,12 +78,12 @@ $default-border-radius: 15px;
   
 }
 
-.animate-element {
+.brightness-animate-element {
   filter: brightness(70%);
-  transition: filter 0.3s ease;
+  transition: 0.3s ease;
 }
 
-.animate-element.animating {
+.brightness-animate-element.brightness-animating {
   filter: brightness(100%);
 }
 

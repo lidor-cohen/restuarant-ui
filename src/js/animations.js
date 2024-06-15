@@ -1,11 +1,11 @@
-let cardElements = document.querySelectorAll(".animate-element");
+let cardElements = document.querySelectorAll(".brightness-animate-element");
 
 function startAnimation() {
-  this.classList.add("animating");
+  this.classList.add("brightness-animating");
 }
 
 function stopAnimation() {
-  this.classList.remove("animating");
+  this.classList.remove("brightness-animating");
 }
 
 cardElements.forEach((element) => {
