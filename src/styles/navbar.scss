@@ -1,57 +1,56 @@
 @import "main.scss";
 
-
 .nav-wrapper {
-    position: absolute;
-    z-index: 3;
-    top: 0;
+  position: absolute;
+  z-index: 3;
+  top: 0;
 
-    padding: 50px;
+  padding: 50px;
 }
 
 .navbar {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    gap: $default-gap + 3px;
-    
-    background-color: $background-color;
-    border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: $default-gap + 3px;
+
+  background-color: $background-color;
+  border-radius: 10px;
 }
 
 .navbar p {
-    font-weight: 100;
-    font-size: 27px;
-    cursor: pointer;
+  font-weight: 100;
+  font-size: 1.6rem;
+  cursor: pointer;
 }
 
 .menu-button {
-    background-color: $background-secondary-color;
-    box-shadow: 0 0 2px $text-color;
-    border-radius: 6px;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  background-color: $background-secondary-color;
+  box-shadow: 0 0 2px $text-color;
+  border-radius: 6px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .nav-regular-button,
 .nav-primary-button {
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    cursor: pointer;;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 300;
+  cursor: pointer;
 }
 
 .nav-primary-button {
-    box-shadow: 0 0 2px $text-color;
-    padding: 10px;
-    border-radius: 10px;
+  box-shadow: 0 0 2px $text-color;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 svg {
-    color: black;
-    width: 25px;
-    height: auto;
+  color: black;
+  width: 25px;
+  height: auto;
 }

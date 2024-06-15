@@ -41,7 +41,7 @@
 }
 
 .card h1 {
-  font-size: 128px;
+  font-size: 6rem;
   width: min-content;
 
   z-index: 2;
@@ -66,13 +66,11 @@
   border-radius: $default-border-radius;
 }
 
-
 .small-card {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
-  
 }
 
 .brightness-animate-element {
