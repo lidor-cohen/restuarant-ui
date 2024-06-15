@@ -1,20 +1,28 @@
 @import "main.scss";
 
+$default-gap: 16px;
+$default-border-radius: 15px;
+
 .main-wrapper {
   display: flex;
   height: 100%;
 
-  gap: 20px;
+  gap: $default-gap;
 }
 
 .big-card {
-  background-color: red;
-  flex: 3;
+  flex: 1;
   height: inherit;
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
 }
 
 .gradient {
+  border-radius: $default-border-radius;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -36,30 +44,57 @@
 }
 
 .card h1 {
-  position: relative;
-  font-size: 110px;
+  font-size: 128px;
   width: min-content;
 
-  top: 60%;
-  left: 5%;
   z-index: 2;
   line-height: 1;
+  padding: 50px;
 }
 
 .small-card-wrapper {
-  flex: 1;
+  flex: 0.3;
   height: inherit;
-  gap: 20px;
+  gap: $default-gap;
 
   display: flex;
   flex-direction: column;
 }
 
 .small-card {
-  background-color: blue;
   height: inherit;
 }
 
 .card {
-  border-radius: 15px;
+  border-radius: $default-border-radius;
+}
+
+
+.small-card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  
+}
+
+.animate-element {
+  filter: brightness(70%);
+  transition: filter 0.3s ease;
+}
+
+.animate-element.animating {
+  filter: brightness(100%);
+}
+
+.small-card:nth-child(1) {
+  background-image: url("https://framerusercontent.com/images/EKJJBnLQzSzsS1Sp8JrOMfZgqw.webp");
+}
+
+.small-card:nth-child(2) {
+  background-image: url("https://framerusercontent.com/images/slPotYXPFXAfEsa1a4GJhZIk.webp");
+}
+
+.small-card:nth-child(3) {
+  background-image: url("https://framerusercontent.com/images/InB1qO4eodYHQXKOVBszhLURHE.webp");
 }
