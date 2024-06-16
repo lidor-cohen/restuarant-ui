@@ -67,6 +67,7 @@
 .card {
   border-radius: $default-border-radius;
   display: flex;
+  justify-content: flex-end;
 }
 
 .brightness-animate-element {
@@ -91,13 +92,18 @@
 
 .card-action-section {
   z-index: 2;
-  position: absolute;
-  left: calc(100% - 210px);
-  top: calc(100% - 60px);
-  width: 200px;
   height: 50px;
   background-color: white;
-  border-radius: inherit;
+  border-radius: 10px;
   background-color: $background-secondary-color;
   justify-self: flex-end;
+
+  align-self: flex-end;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1em;
+  padding: 20px;
+  margin: 5px;
 }
