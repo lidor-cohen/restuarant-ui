@@ -1,11 +1,10 @@
 @import "main.scss";
 
 .nav-wrapper {
-  position: absolute;
+  position: fixed;
   z-index: 3;
-  top: 0;
-
   padding: 50px;
+  top: 0;
 }
 
 .navbar {

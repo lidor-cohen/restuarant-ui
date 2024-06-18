@@ -1,0 +1,35 @@
+@import "main.scss";
+
+$bg_menu_image: "https://framerusercontent.com/images/10I4GJR5nYsUsYnoOPIDjoapkA.webp";
+
+.left-attraction-image {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  font-size: 40px;
+  border-radius: inherit;
+  align-items: flex-end;
+  background-image: url($bg_menu_image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: sticky;
+  position: -webkit-sticky;
+  top: 25px;
+  height: 100%;
+}
+
+.right-section-menu {
+  flex: 1;
+
+  border: 2px solid #efe6d231;
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+
+  padding: 100px;
+}
+
+.maki-section {
+}

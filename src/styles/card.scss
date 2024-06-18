@@ -1,15 +1,7 @@
 @import "main.scss";
 
-.main-wrapper {
-  display: flex;
-  height: 100%;
-
-  gap: $default-gap;
-}
-
 .big-card {
   flex: 1;
-  height: inherit;
   position: relative;
 
   display: flex;
@@ -51,7 +43,6 @@
 
 .small-card-wrapper {
   flex: 0.3;
-  height: inherit;
   gap: $default-gap;
 
   display: flex;
@@ -60,7 +51,7 @@
 
 .small-card {
   position: relative;
-  height: inherit;
+  flex: 1;
   cursor: pointer;
 }
 
@@ -80,14 +71,13 @@
 }
 
 .small-card img {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   position: absolute;
 
   border-radius: inherit;
-  width: 100%;
+  image-rendering: auto;
+  object-fit: cover;
   height: 100%;
+  width: 100%;
 }
 
 .card-action-section {
