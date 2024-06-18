@@ -85,3 +85,14 @@ export const HOMEPAGE_HTML = `<div class="card big-card">
   </div>
 </div>
 `;
+
+export const MENU_HTML = `
+<div class="left-attraction-image">
+  <h1>MENU</h1>
+</div>
+<div class="right-section-menu">
+  <div class="maki-section">
+    <h1>MAKI</h1>
+  </div>
+</div>
+`;
