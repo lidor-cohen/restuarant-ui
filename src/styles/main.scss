@@ -26,6 +26,7 @@ body {
   display: flex;
   padding: 25px;
   min-height: 100vh;
+  flex-wrap: wrap;
 
   border-radius: $default-border-radius;
   gap: $default-gap;

@@ -20,6 +20,33 @@ $bg_menu_image: "https://framerusercontent.com/images/10I4GJR5nYsUsYnoOPIDjoapkA
   height: calc(100vh - 50px);
 }
 
+@media (max-width: 842px) {
+  .left-attraction-image {
+    opacity: 0.4;
+    position: relative;
+    margin-bottom: 30px;
+
+    .right-section-menu {
+      padding: 50px;
+    }
+
+    h1 {
+      opacity: 0;
+    }
+  }
+
+  .nav-wrapper {
+    width: min-content;
+  }
+
+  #content {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+}
+
 .right-section-menu {
   flex: 1;
 
