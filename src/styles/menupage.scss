@@ -28,11 +28,44 @@ $bg_menu_image: "https://framerusercontent.com/images/10I4GJR5nYsUsYnoOPIDjoapkA
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0;
+  padding: 50px 100px;
   gap: 50px;
 }
 
 .filter-section {
   display: flex;
   gap: 5px;
+}
+
+.menu-food-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.content-item {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.content-item img {
+  width: 150px;
+  height: auto;
+}
+
+.food-section-title {
+  display: flex;
+  width: 50%;
+  gap: 20px;
+  align-items: center;
+  font-size: 30px;
+
+  hr {
+    height: 1px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    padding: 0;
+  }
 }

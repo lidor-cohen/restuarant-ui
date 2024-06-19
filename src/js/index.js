@@ -37,10 +37,12 @@ function eventBinders() {
 
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      const divID = button.textContent.trim().toLowerCase() + "-section";
+      const divID =
+        button.textContent.trim().replace(" ", "").toLowerCase() + "-section";
+      console.log(divID);
       scrollToDiv(divID);
     });
   });
 }
 
-// load(HOMEPAGE_HTML);
+load(HOMEPAGE_HTML);
