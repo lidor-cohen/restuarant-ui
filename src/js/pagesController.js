@@ -11,7 +11,7 @@ export const HOMEPAGE_HTML = `<div class="card big-card">
   <h1>SUSHI SENSATION</h1>
 </div>
 <div class="small-card-wrapper">
-  <div class="card small-card">
+  <div class="menuclick-button card small-card">
     <img
       class="brightness-animate-element"
       src="https://framerusercontent.com/images/EKJJBnLQzSzsS1Sp8JrOMfZgqw.webp"
