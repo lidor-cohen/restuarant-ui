@@ -25,7 +25,7 @@ body {
 .main-wrapper {
   display: flex;
   padding: 25px;
-  height: 100vh;
+  min-height: 100vh;
 
   border-radius: $default-border-radius;
   gap: $default-gap;

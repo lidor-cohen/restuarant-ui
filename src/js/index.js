@@ -12,9 +12,16 @@ function load(html_str) {
   setupListeners();
 }
 
+function scrollToDiv(divID) {
+  console.log("ENTERED 2");
+  let ele = document.getElementById(divID);
+  window.scrollTo({ top: ele.offsetTop, behavior: "smooth" });
+}
+
 function eventBinders() {
   let menuButtons = document.querySelectorAll(".menuclick-button");
   let homeButtons = document.querySelectorAll(".homeclick-button");
+  let filterButtons = document.querySelectorAll(".filter-button");
 
   menuButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -27,6 +34,13 @@ function eventBinders() {
       load(HOMEPAGE_HTML);
     });
   });
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const divID = button.textContent.trim().toLowerCase() + "-section";
+      scrollToDiv(divID);
+    });
+  });
 }
 
-load(HOMEPAGE_HTML);
+// load(HOMEPAGE_HTML);

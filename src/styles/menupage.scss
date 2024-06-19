@@ -17,7 +17,7 @@ $bg_menu_image: "https://framerusercontent.com/images/10I4GJR5nYsUsYnoOPIDjoapkA
   position: sticky;
   position: -webkit-sticky;
   top: 25px;
-  height: 100%;
+  height: calc(100vh - 50px);
 }
 
 .right-section-menu {
@@ -27,9 +27,12 @@ $bg_menu_image: "https://framerusercontent.com/images/10I4GJR5nYsUsYnoOPIDjoapkA
   border-radius: inherit;
   display: flex;
   flex-direction: column;
-
-  padding: 100px;
+  align-items: center;
+  padding: 50px 0;
+  gap: 50px;
 }
 
-.maki-section {
+.filter-section {
+  display: flex;
+  gap: 5px;
 }
